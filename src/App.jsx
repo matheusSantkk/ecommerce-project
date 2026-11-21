@@ -1,11 +1,15 @@
-import { HomePage } from './pages/HomePage';
+import { Route, Routes } from "react-router";
+import { HomePage } from "./pages/HomePage";
 
 const App = () => {
   return (
-    <div>
-      <HomePage/>
-    </div>
-  )
-}
+    <>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/checkout" element='' />
+      </Routes>
+    </>
+  );
+};
 
-export default App
+export default App;
