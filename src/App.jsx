@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router";
 import { HomePage } from "./pages/HomePage";
-import { CheckoutPage } from "./pages/CheckoutPage";
+import { CheckoutPage } from "./pages/checkout/CheckoutPage";
 import { OrdersPage } from "./pages/OrdersPage";
 
-const App = () => { 
+const App = () => {
   return (
     <>
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="/checkout" element={<CheckoutPage/>} />
-        <Route path="/orders" element={<OrdersPage/>}/>
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/orders" element={<OrdersPage />} />
       </Routes>
     </>
   );
