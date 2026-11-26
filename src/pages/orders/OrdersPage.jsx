@@ -1,9 +1,16 @@
-import { Header } from "../components/Header";
+import { Link } from "react-router";
+import { Header } from "../../components/Header";
 import "./OrdersPage.css";
 
 export function OrdersPage() {
   return (
     <>
+      <link
+        rel="shortcut icon"
+        href="/images/favicons/orders-favicon.png"
+        type="image/x-icon"
+      />
+
       <title>Orders</title>
 
       <Header />
@@ -33,7 +40,7 @@ export function OrdersPage() {
 
             <div className="order-details-grid">
               <div className="product-image-container">
-                <img src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+                <img src="/images/products/athletic-cotton-socks-6-pairs.jpg" />
               </div>
 
               <div className="product-details">
@@ -47,22 +54,22 @@ export function OrdersPage() {
                 <button className="buy-again-button button-primary">
                   <img
                     className="buy-again-icon"
-                    src="images/icons/buy-again.png"
+                    src="/images/icons/buy-again.png"
                   />
                   <span className="buy-again-message">Add to Cart</span>
                 </button>
               </div>
 
               <div className="product-actions">
-                <a href="/tracking">
+                <Link to="/tracking">
                   <button className="track-package-button button-secondary">
                     Track package
                   </button>
-                </a>
+                </Link>
               </div>
 
               <div className="product-image-container">
-                <img src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" />
+                <img src="/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" />
               </div>
 
               <div className="product-details">
@@ -76,18 +83,18 @@ export function OrdersPage() {
                 <button className="buy-again-button button-primary">
                   <img
                     className="buy-again-icon"
-                    src="images/icons/buy-again.png"
+                    src="/images/icons/buy-again.png"
                   />
                   <span className="buy-again-message">Add to Cart</span>
                 </button>
               </div>
 
               <div className="product-actions">
-                <a href="/tracking">
+                <Link to="/tracking">
                   <button className="track-package-button button-secondary">
                     Track package
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -113,7 +120,7 @@ export function OrdersPage() {
 
             <div className="order-details-grid">
               <div className="product-image-container">
-                <img src="images/products/intermediate-composite-basketball.jpg" />
+                <img src="/images/products/intermediate-composite-basketball.jpg" />
               </div>
 
               <div className="product-details">
@@ -125,18 +132,18 @@ export function OrdersPage() {
                 <button className="buy-again-button button-primary">
                   <img
                     className="buy-again-icon"
-                    src="images/icons/buy-again.png"
+                    src="/images/icons/buy-again.png"
                   />
                   <span className="buy-again-message">Add to Cart</span>
                 </button>
               </div>
 
               <div className="product-actions">
-                <a href="/tracking">
+                <Link to="/tracking">
                   <button className="track-package-button button-secondary">
                     Track package
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
